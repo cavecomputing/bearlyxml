@@ -18,7 +18,7 @@ Map spec to character card format for SillyTavern.
 </todo>
 ```
 ---
-![[bearlyxml.png]]
+![pic](/bearlyxml.png)
 Hola! 👋
 
 This is the BearlyXML character spec format I created for using with AI based roleplay bots. Yes, there are other formats already. Yes, most of them are useless and you should just write things in plaintext. BUT, I like to do things certain ways because I'm difficult like that and I like to make those methods open for other people to use if they want. Spec outlined below.
