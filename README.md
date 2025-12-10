@@ -75,20 +75,18 @@ Example:
 ! This is a comment. It will be ignored.
 ```
 
-## Usage Notes
+## Tag Reference
 
-- `<instructions>`:  
-  - Required for **prompt-based roleplay**. Defines AI behavior, narrative style, and roleplay rules.  
-  - **Ignored** during **character card conversion** for SillyTavern.
-
-- `<user>`:  
-  - Required for **prompt-based roleplay** to define the user role.  
-  - **Ignored** in **character card conversion**.
-
-- `<greetings>`:  
-  - Not used in **prompt-based roleplay**.  
-  - Used **only** in **character card conversion** (e.g., for SillyTavern).  
-  - Included in output character cards.
+| Tag | Description |
+|-----|-------------|
+| `<bearlyxml>` | Root element. Indicates the document follows the BearlyXML format. |
+| `<spec>` | Contains metadata about the spec, including name and version (e.g., "BearlyXML v0.2"). |
+| `<instructions>` | Defines how the LLM should behave during prompt-based roleplay (narrative rules, tone, autonomy, etc.). |
+| `<user>` | Describes the user persona (e.g., name, age). Used in roleplay prompts. Ignored in SillyTavern character card conversion. |
+| `<setting>` | Describes the scene or scenario. Maps to the "Scenario" field in SillyTavern. |
+| `<character>` | Contains the main character’s data, including backstory and attributes. |
+| `<character><attributes>` | A list of key-value pairs (YAML-style) describing the character’s traits (e.g., name, age, appearance). |
+| `<greetings>` | A list of greeting messages for use in SillyTavern. Only used during character card conversion. |
 
 ## Key Sections by Use Case
 
